@@ -1,0 +1,28 @@
+.yazis1{
+    color: rgb(179, 122, 122);
+    font-size: 40px;
+    font-family: monospace;
+    }
+    .yazis2{
+        font-family: 'Courier New', Courier, monospace;
+    color: rgb(136, 101, 101);
+    font-size: 30px;
+    }
+    .yazis3{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        color: rgb(90, 141, 141);
+    }
+    .buton{
+        font-family: 'Courgette', cursive;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: rgb(46, 182, 182);
+     
+        color: white;
+        border: teal    ;
+    }
+    .buton:hover{
+        background-color: teal;
+    }

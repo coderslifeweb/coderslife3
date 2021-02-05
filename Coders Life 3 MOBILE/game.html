@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="game.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa&family=Courgette&display=swap" rel="stylesheet">
+<title>Coders Life 3 MOBILE</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa&family=Courgette&family=Playfair+Display+SC:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=IM+Fell+Double+Pica:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=IM+Fell+Double+Pica:ital@1&family=Share&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=IM+Fell+Double+Pica:ital@1&family=Molengo&family=Share&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <script>
+        var isim;
+        var money =200;
+        var eksigk;
+        var eksigr;
+        kodg =0;
+        reklamg=0;
+        var reklama =0;
+        var koda =0;
+        var eksiak;
+        var eksiar;
+
+        function back(){
+            window.location="index.html";
+        }
+        function start(){
+            var el = document.getElementById("start");
+
+el.parentNode.removeChild(el);
+        document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
+        var elq = document.getElementById("alert");
+
+elq.parentNode.removeChild(elq);
+        
+        }
+        function yayinga(){
+    kodg =document.getElementById("kod").value;
+    reklamg =document.getElementById("reklam").value;
+    if (kodg <1 ) {
+        money -=500;
+        
+    }
+    if (reklamg <1) {
+money -=500;
+    
+}
+    if (kodg >0){
+eksigk =kodg *20;
+money -= eksigk;
+if (kodg <=3) {
+    money +=33;
+
+    
+}
+if (kodg >3) {
+    money +=105
+    
+}
+if (kodg     >=6) {
+    money +=200;    
+    
+}
+if (kodg >=9) {
+    money +=205;
+    
+}
+if (kodg     >=19) {
+    money +=480;    
+    
+} 
+if (kodg >=27) {
+    money +=750;
+    
+}
+if (kodg     >=38) {
+    money +=1100;    
+    
+} 
+if (kodg >=47) {
+    money +=1500;
+    
+}
+if (kodg     >=65) {
+    money +=2000;    
+    
+} 
+if (kodg >=89) {
+    money +=2500;
+    
+}
+if (kodg     >=101) {
+    money +=3000;    
+    
+} 
+}
+if (reklamg >0) {
+    eksigr =reklamg *40;
+money -= eksigr;
+if (reklamg <=3) {
+    money +=105;
+
+    
+}
+if (reklamg >3) {
+    money +=210;
+    
+}
+if (reklamg     >=6) {
+    money +=250;    
+    
+} 
+if (reklamg >=9) {
+    money +=640;
+    
+}
+if (reklamg     >=19) {
+    money +=810;    
+    
+} 
+if (reklamg >=27) {
+    money +=1300;
+    
+}
+if (reklamg     >=38) {
+    money +=1750;    
+    
+} 
+if (reklamg >=47) {
+    money +=2300;
+    
+}
+if (reklamg     >=65) {
+    money +=3500;    
+    
+} 
+if (reklamg >=89) {
+    money +=4000;
+    
+}
+if (reklamg     >=101) {
+    money +=7000;    
+    
+} 
+}
+if (money >=10000) {
+    money -=1000
+    
+}
+if (money >=15000) {
+    money -=2000
+    
+}
+if (money >=21000) {
+    money -=4000
+    
+}
+if (money >=27000) {
+    money -=6500
+    
+}
+if (money >=37000) {
+    money -=10500
+    
+}
+if (money >=50000) {
+    money -=13000
+    
+}if (money >=70000) {
+    money -=17000
+    
+}
+if (money >=90000) {
+    money -=25000
+    
+}
+if (money >=110000) {
+    money -=30000
+    
+}if (money >=150000) {
+    money -=40000
+    
+}
+if (money >=200000) {
+    money -=49000
+    
+}
+if (money >=300000) {
+    money -=61000
+    
+}
+if (money >= 100000000) {
+    window.location ="win.html"
+}
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
+if (money <0) {
+    window.location ="lose.html";
+}
+        }
+        function yayina(){
+    koda =document.getElementById("koda").value;
+    reklama =document.getElementById("reklama").value;
+    if (money <= 13000) {
+        window.location ="lose.html";
+    }
+    if (koda <1 ) {
+        money -=500;
+        
+    }
+    if (reklama <1) {
+money -=500;
+    
+}
+    if (koda >0){
+eksiak =koda *20;
+money -= eksiak;
+if (koda <=3) {
+    money +=33;
+
+    
+}
+if (koda >3) {
+    money +=20000;
+    
+}
+if (koda     >=6) {
+    money +=95000;    
+    
+}
+if (koda >=9) {
+    money +=170000;
+    
+}
+if (koda     >=19) {
+    money +=300000;    
+    
+} 
+if (koda >=27) {
+    money +=450000;
+    
+}
+if (koda     >=38) {
+    money +=520000;    
+    
+} 
+if (koda >=47) {
+    money +=810000;
+    
+}
+if (koda     >=65) {
+    money +=950000;    
+    
+} 
+if (koda >=89) {
+    money +=1222000;
+    
+}
+if (koda     >=101) {
+    money +=1400000;    
+    
+} 
+}
+if (reklama >0) {
+    eksiar =reklama *40;
+money -= eksiar;
+if (reklama <=3) {
+    money +=105;
+
+    
+}
+if (reklama >3) {
+    money +=210;
+    
+}
+if (reklama     >=6) {
+    money +=250;    
+    
+} 
+if (reklama >=9) {
+    money +=640;
+    
+}
+if (reklama     >=19) {
+    money +=810;    
+    
+} 
+if (reklama >=27) {
+    money +=1300;
+    
+}
+if (reklama     >=38) {
+    money +=1750;    
+    
+} 
+if (reklama >=47) {
+    money +=2300;
+    
+}
+if (reklama     >=65) {
+    money +=3500;    
+    
+} 
+if (reklama >=89) {
+    money +=4000;
+    
+}
+if (reklama     >=101) {
+    money +=7000;    
+    
+} 
+}
+if (money >=10000) {
+    money -=3000;
+    
+}
+if (money >=15000) {
+    money -=4000;
+    
+}
+if (money >=21000) {
+    money -=5000;
+    
+}
+if (money >=27000) {
+    money -=8500;
+    
+}
+if (money >=37000) {
+    money -=12000;
+    
+}
+if (money >=50000) {
+    money -=15000;
+    
+}if (money >=70000) {
+    money -=22000;
+    
+}
+if (money >=90000) {
+    money -=32000;
+    
+}
+if (money >=110000) {
+    money -=40000;
+    
+}if (money >=150000) {
+    money -=47000;
+    
+}
+if (money >=200000) {
+    money -=55000;
+    
+}
+if (money >=300000) {
+    money -=70000;
+    
+}
+
+if (money >= 100000000) {
+    window.location ="win.html"
+}
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
+if (money <0) {
+    window.location ="lose.html";
+}
+        }
+    </script>
+<body background="CLBGM1.png"></body>
+<button class="buton" onclick="back()">Go Back To Main Menu</button>
+<button id="start" class="buton" onclick="start()">Start The Game</button>
+<h2 id="alert"  class="alert">If your money will be under than 0 Dollars you will be lose.</h2>
+<h1 class="money" id="money"></h1>
+<br><br><br><br>
+<h1 class="baslik">Game Features</h1>
+<br>
+
+
+
+<input  type="number"  required title="Enter Code Level 20$" placeholder="Coding +1 20$" class="urun" value="" id="kod">
+<br>
+<br><br>
+<input type="number" required title="Enter Advertisement Level 40$" placeholder="Advert +1 40$" class="urun" value="" id="reklam">
+<br><br>
+<input value="Publish Game!" type="submit" onclick="yayinga()" class="yayin">
+<br><br>
+<h1 class="baslik">App Features</h1>
+<input  type="number"  required title="Enter Code Level 13.600$" placeholder="Coding +1 13.600$" class="urun" value="" id="koda">
+<br>
+<br><br>
+<input type="number" required title="Enter Advertisement Level 30.000$" placeholder="Advert +1 30.000$" class="urun" value="" id="reklama">
+<br><br>
+<input value="Publish App!" type="submit" onclick="yayina()" class="yayin">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

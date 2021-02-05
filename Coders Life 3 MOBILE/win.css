@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+.yazi{
+    font-family: monospace;
+    color: rgb(128, 255, 0);
+    font-size: 60px;
+    font-size: 100px;
+}
+.alert{
+    color: chartreuse;
+    font-family: monospace
+}
+.alert:hover{
+    color: rgb(181, 255, 107);
+}
+.yazi:hover{
+    color: chartreuse;
+}
+.buton{
+    width: 500px;
+    height: 100px;
+    font-family: monospace;
+    font-size: 50px;
+    background-color: black;
+    color: rgb(28, 175, 175);
+    border-radius: 10px;
+    border: black;
+
+}
+.buton:hover{
+    color: teal;
+
+}
+::selection{
+    background-color: white;
+    color: black;
+}
