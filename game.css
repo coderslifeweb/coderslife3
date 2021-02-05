@@ -1,0 +1,69 @@
+.baslik{
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'Share', cursive;
+    color: rgb(0, 0, 0);
+    width: 100px;
+}
+.baslik:hover{
+    color: rgb(116, 92, 92);
+}
+.yazi{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.urun{
+    border-radius: 5px;
+    color: cadetblue;
+    font-family: monospace;
+    background-color: rgb(255, 255, 255);
+    border: rgb(255, 0, 0);
+    height: 20px;
+}
+.alert{
+    color: rgb(255, 0, 0);
+    background-color: rgb(212, 179, 179);
+    font-family: monospace;
+
+}
+.alert:hover{
+    color: rgb(201, 19, 19);
+    background-color: white;
+}
+.buton{
+    font-family: 'Playball', cursive;
+    background-color: lightseagreen;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    border: lightseagreen;
+    border-radius: 1000px;
+    font-size: 20px;
+}
+.buton:hover{
+    color: lightseagreen;
+    background-color: white;
+    border-radius: 1000px;
+}
+.yayin{
+    border-radius: 5px;
+    border: black;
+    background-color: rgb(35, 190, 190);
+    color: black;
+
+}
+.yayin:hover{
+    background-color: teal;
+    color: white;
+}
+.money{
+    font-family: 'Cairo', sans-serif;
+}
+.money:hover{
+    color: rgb(63, 119, 6);
+}
+::selection{
+    background-color: black;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'Share', cursive;
+}

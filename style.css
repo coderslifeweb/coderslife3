@@ -1,0 +1,22 @@
+.baslik{
+    font-family:'Dancing Script', cursive;
+    font-size: 60px;
+    color: teal;
+}
+.alt{
+    font-family: 'Caveat', cursive;
+    color: rgb(28, 167, 167);
+}
+.buton{
+    font-family: 'Courgette', cursive;
+    width: 500px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(46, 182, 182);
+    font-size: 50px;
+    color: white;
+    border: teal    ;
+}
+.buton:hover{
+    background-color: teal;
+}
